@@ -1,0 +1,6 @@
+[submodule "pq-frontend"]
+	path = pq-frontend
+	url = git@github.com:YY404NF/pq-frontend.git
+[submodule "pq-backend"]
+	path = pq-backend
+	url = git@github.com:YY404NF/pq-backend.git
