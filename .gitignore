@@ -4,8 +4,6 @@ Thumbs.db
 .idea/
 .vscode/
 
-.codex-backups/
-
 *.log
 *.tmp
 *.temp
