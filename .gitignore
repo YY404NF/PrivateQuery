@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/
+
+.codex-backups/
+
+*.log
+*.tmp
+*.temp
+
+.env
+.env.*
+!.env.example
