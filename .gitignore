@@ -12,4 +12,6 @@ Thumbs.db
 .env.*
 !.env.example
 
+deploy/release/backend/data/
+
 参考/

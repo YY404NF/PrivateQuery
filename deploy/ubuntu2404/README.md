@@ -10,7 +10,13 @@ This directory contains the server-side templates used by the local release buil
 
 ## Release output
 
-Run the following command on the local Windows machine:
+Run one of the following commands on the stronger local machine:
+
+```bash
+./scripts/build-release.sh
+```
+
+or
 
 ```powershell
 pwsh ./scripts/build-release.ps1
@@ -25,6 +31,8 @@ Artifacts will be written into `deploy/release/`:
 - `backend/server-b.env`: runtime env for Server B
 - `backend/start-server-a.sh`: startup script for Server A
 - `backend/start-server-b.sh`: startup script for Server B
+
+If the target server should only `git pull`, commit and push `deploy/release/` after the local build finishes.
 
 ## Server deployment
 

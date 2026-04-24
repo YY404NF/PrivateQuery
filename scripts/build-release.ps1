@@ -85,7 +85,7 @@ export CGO_ENABLED=1
 export GOOS=linux
 export GOARCH=amd64
 
-go build -o "$outputRootWsl/backend/server-a" ./cmd/server
+go build -trimpath -ldflags="-s -w" -o "$outputRootWsl/backend/server-a" ./cmd/server
 cp "$outputRootWsl/backend/server-a" "$outputRootWsl/backend/server-b"
 "@
 

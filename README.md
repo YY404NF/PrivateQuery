@@ -41,7 +41,15 @@ The frontend defaults to same-origin proxy paths:
 
 ## Ubuntu 24.04 Release Build
 
-When the Ubuntu server is too weak to compile locally, build release artifacts on the Windows workstation first:
+When the Ubuntu server is too weak to compile locally, build release artifacts on a stronger machine first.
+
+On Linux or WSL Ubuntu 24.04:
+
+```bash
+./scripts/build-release.sh
+```
+
+On Windows PowerShell with WSL `Ubuntu-24.04`:
 
 ```powershell
 pwsh ./scripts/build-release.ps1
@@ -53,7 +61,9 @@ This command builds:
 - `deploy/release/backend/server-a`: Linux binary for backend A on port `18081`
 - `deploy/release/backend/server-b`: Linux binary for backend B on port `18082`
 
-The script expects WSL distro `Ubuntu-24.04` with `go` and `g++` available for the backend build.
+The Linux script builds directly on the local machine. The PowerShell script expects WSL distro `Ubuntu-24.04` with `go` and `g++` available for the backend build.
+
+If you want the server to only `git pull` and deploy, run the release build locally, then commit and push `deploy/release/` together with any code changes.
 
 Server-side deployment templates are stored in `deploy/ubuntu2404/`.
 
