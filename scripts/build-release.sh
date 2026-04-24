@@ -94,10 +94,9 @@ if ((SKIP_BACKEND == 0)); then
   cp "$BACKEND_OUTPUT/server-a" "$BACKEND_OUTPUT/server-b"
   cp "$REPO_ROOT/deploy/ubuntu2404/server-a.env" "$BACKEND_OUTPUT/server-a.env"
   cp "$REPO_ROOT/deploy/ubuntu2404/server-b.env" "$BACKEND_OUTPUT/server-b.env"
-  cp "$REPO_ROOT/deploy/ubuntu2404/start-server-a.sh" "$BACKEND_OUTPUT/start-server-a.sh"
-  cp "$REPO_ROOT/deploy/ubuntu2404/start-server-b.sh" "$BACKEND_OUTPUT/start-server-b.sh"
+  cp "$REPO_ROOT/deploy/ubuntu2404/start-server.sh" "$BACKEND_OUTPUT/start-server.sh"
   chmod +x "$BACKEND_OUTPUT/server-a" "$BACKEND_OUTPUT/server-b" \
-    "$BACKEND_OUTPUT/start-server-a.sh" "$BACKEND_OUTPUT/start-server-b.sh"
+    "$BACKEND_OUTPUT/start-server.sh"
 fi
 
 cp "$REPO_ROOT/deploy/ubuntu2404/README.md" "$OUTPUT_ROOT/README.md"

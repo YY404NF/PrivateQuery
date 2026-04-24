@@ -94,8 +94,7 @@ cp "$outputRootWsl/backend/server-a" "$outputRootWsl/backend/server-b"
 
     Copy-Item -Force (Join-Path $repoRoot "deploy\\ubuntu2404\\server-a.env") (Join-Path $backendOutput "server-a.env")
     Copy-Item -Force (Join-Path $repoRoot "deploy\\ubuntu2404\\server-b.env") (Join-Path $backendOutput "server-b.env")
-    Copy-Item -Force (Join-Path $repoRoot "deploy\\ubuntu2404\\start-server-a.sh") (Join-Path $backendOutput "start-server-a.sh")
-    Copy-Item -Force (Join-Path $repoRoot "deploy\\ubuntu2404\\start-server-b.sh") (Join-Path $backendOutput "start-server-b.sh")
+    Copy-Item -Force (Join-Path $repoRoot "deploy\\ubuntu2404\\start-server.sh") (Join-Path $backendOutput "start-server.sh")
 }
 
 Copy-Item -Force (Join-Path $repoRoot "deploy\\ubuntu2404\\README.md") (Join-Path $outputRoot "README.md")

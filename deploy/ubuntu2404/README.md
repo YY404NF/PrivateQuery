@@ -29,8 +29,7 @@ Artifacts will be written into `deploy/release/`:
 - `backend/server-b`: Linux binary for Server B
 - `backend/server-a.env`: runtime env for Server A
 - `backend/server-b.env`: runtime env for Server B
-- `backend/start-server-a.sh`: startup script for Server A
-- `backend/start-server-b.sh`: startup script for Server B
+- `backend/start-server.sh`: startup script for Server A and Server B
 
 If the target server should only `git pull`, commit and push `deploy/release/` after the local build finishes.
 
@@ -42,9 +41,10 @@ If the target server should only `git pull`, commit and push `deploy/release/` a
 4. Run:
 
 ```bash
-chmod +x server-a server-b start-server-a.sh start-server-b.sh
-./start-server-a.sh
-./start-server-b.sh
+chmod +x server-a server-b start-server.sh
+./start-server.sh
 ```
+
+The script uses `nohup` to launch both backends in the background, so they keep running after the terminal is closed. Logs are written to `logs/server-a.log` and `logs/server-b.log`.
 
 The backend binaries create their SQLite sample databases on first startup if the target files do not exist.
