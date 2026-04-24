@@ -1,9 +1,9 @@
 [submodule "pq-frontend"]
 	path = pq-frontend
-	url = git@github.com:YY404NF/pq-frontend.git
+	url = https://github.com/YY404NF/pq-frontend.git
 [submodule "pq-backend"]
 	path = pq-backend
-	url = git@github.com:YY404NF/pq-backend.git
+	url = https://github.com/YY404NF/pq-backend.git
 [submodule "pq-dpf-core"]
 	path = pq-dpf-core
-	url = /Users/kevinzhang/Projects/pq-dpf-core-repo
+	url = https://github.com/YY404NF/pq-dpf-core.git
